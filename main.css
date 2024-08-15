@@ -1,16 +1,20 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    margin: 20px;
-    padding: 0;
+    margin: 0; 
+    padding: 20px; 
+    background-color: #f4f4f9; 
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: #333;
+    color: #10d835;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 p {
     color: #555;
+    margin-bottom: 10px;
 }
 
 b {
@@ -21,17 +25,19 @@ i {
     font-style: italic;
 }
 
-ol li {
+ol li, ul li {
     margin-bottom: 10px;
 }
 
 a {
     text-decoration: none;
     color: #007BFF;
+    transition: color 0.3s ease; 
 }
 
 a:hover {
     text-decoration: underline;
+    color: #0056b3; 
 }
 
 img {
@@ -39,6 +45,7 @@ img {
     height: auto;
     margin-top: 10px;
     margin-bottom: 10px;
+    border-radius: 8px; 
 }
 
 .red-text {
@@ -59,4 +66,14 @@ th, td {
 
 th {
     background-color: #f2f2f2;
+}
+
+.card {
+    background-color:cadetblue;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px; 
 }
