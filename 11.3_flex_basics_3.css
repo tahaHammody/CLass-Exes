@@ -1,0 +1,36 @@
+
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: flex-end; 
+}
+
+.container {
+    display: flex;
+    justify-content: flex-end; 
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}
+
+.box1 {
+    background-color: red;
+}
+
+.box2 {
+    background-color: green;
+}
+
+.box3 {
+    background-color: blue;
+}

@@ -1,0 +1,38 @@
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center; 
+}
+
+.container {
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-around; 
+    align-items: flex-start; 
+}
+
+.box {
+    width: 150px; 
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    margin: 70px 0; 
+}
+
+.box1 {
+    background-color: red;
+}
+
+.box2 {
+    background-color: green;
+}
+
+.box3 {
+    background-color: blue;
+}
