@@ -1,0 +1,47 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.nav-item {
+    position: relative;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.nav-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.3s ease;
+}
+
+.nav-item::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0; 
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.3s ease;
+}
+
+
+.nav-item:hover::after {
+    width: 100%; 
+}
+
+.nav-item:hover::before {
+    width: 100%; 
+    left: 0; 
+}
