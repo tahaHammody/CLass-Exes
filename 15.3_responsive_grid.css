@@ -1,0 +1,131 @@
+#container {
+    height: 80vh;
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+}
+.card {
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+}
+@media (min-width: 1000px) {
+    #container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "el1 el1 el1 el1"
+            "el3 el5 el5 el2"
+            "el3 el5 el5 el2"
+            "el4 el4 el4 el4";
+    }
+
+    #el1 {
+        grid-area: el1;
+        background-color: rgb(217, 66, 32);
+    }
+
+    #el2 {
+        grid-area: el2;
+        background-color: rgb(54, 84, 243);
+    }
+
+    #el3 {
+        grid-area: el3;
+        background-color: rgb(135, 77, 136);
+    }
+
+    #el5 {
+        grid-area: el5;
+        background-color: rgb(9, 226, 24);
+    }
+
+    #el4 {
+        grid-area: el4;
+        background-color: rgb(253, 229, 21);
+    }
+}
+
+/* Tablet layout */
+@media (min-width: 750px) and (max-width: 1000px) {
+    #container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "el1 el1 el1 el1"
+            "el2 el5 el5 el5"
+            "el2 el5 el5 el5"
+            "el3 el3 el3 el3"
+            "el4 el4 el4 el4";
+    }
+
+    #el1 {
+        grid-area: el1;
+        background-color: rgb(217, 66, 32);
+    }
+
+    #el2 {
+        grid-area: el2;
+        background-color: rgb(54, 84, 243);
+    }
+
+    #el3 {
+        grid-area: el3;
+        background-color: rgb(135, 77, 136);
+    }
+
+    #el5 {
+        grid-area: el5;
+        background-color: rgb(9, 226, 24);
+    }
+
+    #el4 {
+        grid-area: el4;
+        background-color: rgb(253, 229, 21);
+    }
+}
+
+/* Mobile layout */
+@media (max-width: 750px) {
+    #container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "el1 el1 el1 el1"
+            "el2 el2 el2 el2"
+            "el5 el5 el5 el5"
+            "el5 el5 el5 el5"
+            "el3 el3 el3 el3"
+            "el4 el4 el4 el4";
+    }
+    }
+
+    #el1 {
+        grid-area: el1;
+        background-color: rgb(217, 66, 32);
+    }
+
+    #el2 {
+        grid-area: el2;
+        background-color: rgb(54, 84, 243);
+    }
+
+    #el3 {
+        grid-area: el3;
+        background-color: rgb(135, 77, 136);
+    }
+
+    #el5 {
+        grid-area: el5;
+        background-color: rgb(9, 226, 24);
+    }
+
+    #el4 {
+        grid-area: el4;
+        background-color: rgb(253, 229, 21);
+    }
+
+
